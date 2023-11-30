@@ -1,0 +1,13 @@
+{
+  "name": "n-project",
+  "version": "0.9.0",
+  "description": "Lab-project for an in-browser framework with reactive components using compact HTML and CSS syntax",
+  "scripts": {
+    "serve": "live-server --open=public --watch=public"
+  },
+  "author": "K.P.Uecker / xistenceimaginations",
+  "license": "LGPL-3.0-or-later",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

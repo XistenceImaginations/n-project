@@ -1,0 +1,14 @@
+header
+    div(style="height: 150px; display: flex; justify-content: center; align-items: center;")
+        n:logo
+    h1 n-Project
+
+<ccss>
+header,
+.header
+    display: flex
+    flex-direction: column
+    justify-content: center
+h1
+    text-align: center
+</ccss>

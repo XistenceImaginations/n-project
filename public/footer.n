@@ -1,0 +1,11 @@
+footer build v0.9.0
+
+<ccss>
+footer
+    margin-top: 4em
+    width: 100%
+    color: #0003
+    padding: 0 1em
+    text-align: right
+    font-size: 0.75em
+</ccss>

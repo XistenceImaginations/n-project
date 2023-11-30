@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script src="n.js"></script>
+        <script>
+            // example for using 'eventTest' elsewhere in the pug-like code (search for 'eventTest' in the project)
+            let eventTest = event => console.log('EVENT TEST');
+        </script>
+        <style>
+/* testing */
+foo\:bar {
+    background-color: green;
+}
+        </style>
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+
+
+        <!-- example of including a css file via '<n include>'. these files can be included: .css, .js, .n -->
+        <n include="app.css"></n>
+
+        <!-- examples of including components via '<n:[COMPONENTNAME]>', includes a COMPONENTNAME.n file -->
+        <n:app foobar1="FOO!"></n:app>
+
+        <!-- example for setting up a listener for the ready-state of n -->
+        <script>
+            $n?.on('ready', () => console.log('n is ready'));
+        </script>
+
+
+        
+        <!-- testing -->
+        <n include="footer.css"></n>
+        <n include="footer.js"></n>
+        <div class="md:foobar">FOOBAR</div>
+        <style>
+.md\:foobar {
+    box-shadow: 0 0 10px blue;
+}
+@media(max-width: 700px) {
+    .md\:foobar {
+        box-shadow: 0 0 10px red;
+    }
+}
+        </style>
+    </body>
+</html>

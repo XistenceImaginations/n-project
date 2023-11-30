@@ -1,0 +1,16 @@
+n:header
+n:content
+    span The n-project is a proof-of-concept and just a play-a-round. It uses some concepts from known libraries like Svelte, PUG, etc. with the differences that all happens in the browser - no build system and code-generation upfront.
+n:footer
+
+<script>
+export let foobar1 = 'foobar test1';
+export let foobar2 = 'foobar test2', foobar3 = 'foobar test3', foobar4;
+
+console.log('<foobar1>', foobar1);
+</script>
+<ccss>
+:host
+    margin: 0 auto
+    max-width: 768px
+</ccss>
